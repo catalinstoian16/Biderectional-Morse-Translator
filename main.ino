@@ -7,7 +7,6 @@ LiquidCrystal_I2C lcd(0x27,16,2);
 #define DIT 4
 #define DAH 7
 #define BREAK 8
-// one break for small gap, 2 break for medium gap
 #define BUZZER 11
 #define LED 12
 #define POTENT A0
@@ -227,7 +226,6 @@ void loop() {
           lcd.setCursor(0,0);
           lcd.print("Translating M2L:");
           lcd.setCursor(0,1);
-//          lcd.print("morse to latin...");
         }
       }
     }
